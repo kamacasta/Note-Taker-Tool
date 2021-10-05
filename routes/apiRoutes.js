@@ -4,13 +4,15 @@ const router = require('express').Router();
 const fs = require("fs");
 const path = require('path');
 
-// Gets the notes data
-router.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "../public/index.html"));
-});
+router.get('', (req, res) => {
 
+})
 
+router.post('', (req, res) => {
+    
+})
 
+router.delete('', (req, res) => {
+    
+})
 
-router.get
-module.exports = router;
