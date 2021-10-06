@@ -14,6 +14,8 @@ const apiRoute = require('./routes/apiRoutes');
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.use(express.static('public'));
+
 // routes can be used
 app.use('/api', apiRoute);
 app.use("/", htmlRoute);

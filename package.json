@@ -13,5 +13,15 @@
     "express": "^4.17.1",
     "nodemon": "^2.0.13",
     "uuid": "^8.3.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamacasta/Note-Taker-Tool.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/kamacasta/Note-Taker-Tool/issues"
+  },
+  "homepage": "https://github.com/kamacasta/Note-Taker-Tool#readme"
 }
