@@ -7,7 +7,7 @@ const fs = require("fs");
 // Router for getting the notes from db.json
 router.get('/api/notes', (req, res) => {
     // fs module used to correspond to db also used on line 24, and 40
-    fs.readFile('./db/db.json', "utf-8", (err, data) => {
+    fs.readFile('./db/db.json', "UTF8", (err, data) => {
         // data being parsed from db.json also used on line 25, and 41
         const noteData = JSON.parse(data);
         res.send(noteData);
@@ -21,7 +21,7 @@ router.get('/api/notes', (req, res) => {
 // Router to post notes from the user, and also saves the notes created
 router.post('/api/notes', (req, res) => {
     req.body.id = UUID.v1();
-    fs.readFile('./db/db.json', 'utf-8', (err, data) => {
+    fs.readFile('./db/db.json', 'UTF8', (err, data) => {
         const noteData = JSON.parse(data);
         noteData.push(req.body);
         fs.writeFile('./db/db.json', JSON.stringify(noteData), (err) => {
@@ -35,3 +35,4 @@ router.post('/api/notes', (req, res) => {
 });
 
 
+module.exports = router;

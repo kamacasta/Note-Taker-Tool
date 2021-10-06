@@ -17,3 +17,7 @@ app.use(express.json());
 // routes can be used
 app.use('/api', apiRoute);
 app.use("/", htmlRoute);
+
+app.listen(PORT, () => {
+    console.log(`App is now listening on PORT ${PORT}`);
+});
